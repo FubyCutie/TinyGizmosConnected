@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "tiny_gizmos:block/gizmo" }
+  }
+}

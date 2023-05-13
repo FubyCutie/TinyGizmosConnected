@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "tiny_gizmos",
+  "version": "${version}",
+  "name": "TinyGizmosConnected",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/fuby/TinyGizmosConnected"
+  },
+  "license": "MIT",
+  "icon": "assets/TinyGizmosConnected/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "uk.fuby.tinygizmosconnected.client.TinyGizmosConnectedClient"
+    ],
+    "main": [
+      "uk.fuby.tinygizmosconnected.TinyGizmosConnected"
+    ]
+  },
+  "mixins": [
+    "TinyGizmosConnected.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

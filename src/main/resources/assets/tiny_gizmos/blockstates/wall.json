@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "wall_light=normal": { "model": "tiny_gizmos:block/wall" },
+    "wall_light=shaded": { "model": "tiny_gizmos:block/shaded_wall"},
+    "wall_light=glowing": { "model": "tiny_gizmos:block/glowing_wall"}
+  }
+}

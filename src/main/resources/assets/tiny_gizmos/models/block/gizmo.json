@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "tiny_gizmos:block/gizmo"
+  }
+}
+
