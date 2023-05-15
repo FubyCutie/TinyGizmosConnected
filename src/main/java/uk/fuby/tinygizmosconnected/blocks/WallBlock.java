@@ -60,11 +60,13 @@ public class WallBlock extends Block {
 			if (currentLightState == LightStates.NORMAL) return ActionResult.FAIL;
 			if (currentLightState == LightStates.GLOWING) {
 				world.setBlockState(pos, state.with(LIGHT_STATE, LightStates.NORMAL));
-				return returnItems(Items.GLOWSTONE_DUST, player, world, pos, hit.getSide());
+				returnItems(Items.GLOWSTONE_DUST, player, world, pos, hit.getSide());
+				return ActionResult.SUCCESS;
 			}
 			if (currentLightState == LightStates.SHADED) {
 				world.setBlockState(pos, state.with(LIGHT_STATE, LightStates.NORMAL));
-				return returnItems(Items.BLACK_DYE, player, world, pos, hit.getSide());
+				returnItems(Items.BLACK_DYE, player, world, pos, hit.getSide());
+				return ActionResult.SUCCESS;
 			}
 		}
 
@@ -77,8 +79,8 @@ public class WallBlock extends Block {
 		return 7;
 	}
 
-	private ActionResult returnItems(Item item, PlayerEntity player, World world, BlockPos pos, Direction direction) {
-		if (player.isCreative()) return ActionResult.SUCCESS;
+	private void returnItems(Item item, PlayerEntity player, World world, BlockPos pos, Direction direction) {
+		if (player.isCreative()) return;
 		Vec3f vector = direction.getUnitVector();
 		double velX = vector.getX() * 0.2;
 		double velY = vector.getY() * 0.2;
@@ -96,7 +98,6 @@ public class WallBlock extends Block {
 		world.spawnEntity(
 				new ItemEntity(world, spawnX, spawnY, spawnZ, new ItemStack(item), velX, velY, velZ)
 		);
-		return ActionResult.SUCCESS;
 	}
 
 }

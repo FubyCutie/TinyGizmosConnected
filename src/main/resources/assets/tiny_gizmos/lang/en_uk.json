@@ -1,5 +1,6 @@
 {
-  "block.tiny_gizmos.gizmo":  "Gizmo",
-  "block.tiny_gizmos.wall":   "Wall"
+  "block.tiny_gizmos.gizmo":            "Gizmo",
+  "block.tiny_gizmos.wall":             "Wall",
+  "itemGroup.tiny_gizmos.gizmo_group":  "Tiny Gizmos"
 }
 

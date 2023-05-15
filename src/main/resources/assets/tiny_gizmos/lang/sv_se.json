@@ -1,4 +1,5 @@
 {
-  "block.tiny_gizmos.gizmo":  "Mackapär",
-  "block.tiny_gizmos.wall":   "Vägg"
+  "block.tiny_gizmos.gizmo":            "Mackapär",
+  "block.tiny_gizmos.wall":             "Vägg",
+  "itemGroup.tiny_gizmos.gizmo_group":  "Pyttesmå Mackapärer"
 }

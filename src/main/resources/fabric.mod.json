@@ -4,9 +4,9 @@
   "version": "${version}",
   "name": "TinyGizmosConnected",
   "description": "",
-  "authors": [],
+  "authors": ["Skye"],
   "contact": {
-    "repo": "https://github.com/fuby/TinyGizmosConnected"
+    "repo": "https://github.com/FubyCutie/TinyGizmosConnected"
   },
   "license": "MIT",
   "icon": "assets/TinyGizmosConnected/icon.png",
