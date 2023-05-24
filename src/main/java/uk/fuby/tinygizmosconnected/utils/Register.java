@@ -33,13 +33,17 @@ public class Register {
 	public static void register(String modid) {
 
 		Registry.register(Registry.BLOCK, new Identifier(modid, "gizmo"), GIZMO);
-		Registry.register(Registry.ITEM, new Identifier(modid, "gizmo"), GIZMO_ITEM);
 		Registry.register(Registry.BLOCK, new Identifier(modid, "wall"), WALL);
+
+		Registry.register(Registry.ITEM, new Identifier(modid, "gizmo"), GIZMO_ITEM);
 		Registry.register(Registry.ITEM, new Identifier(modid, "wall"), WALL_ITEM);
 
-		List<ItemStack> itemStacks =List.of(
+
+		List<ItemStack> itemStacks = List.of(
 				new ItemStack(GIZMO_ITEM),
-				new ItemStack(WALL_ITEM));
+				new ItemStack(WALL_ITEM)
+		);
+
 
 		FabricItemGroupBuilder itemGroupBuilder = FabricItemGroupBuilder.create(
 				new Identifier(TinyGizmosConnected.modid, "gizmo_group"))

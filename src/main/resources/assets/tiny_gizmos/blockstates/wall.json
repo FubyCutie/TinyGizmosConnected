@@ -1,7 +1,59 @@
 {
-  "variants": {
-    "wall_light=normal": { "model": "tiny_gizmos:block/wall" },
-    "wall_light=shaded": { "model": "tiny_gizmos:block/shaded_wall"},
-    "wall_light=glowing": { "model": "tiny_gizmos:block/glowing_wall"}
-  }
+  "multipart": [
+    {   "apply": { "model": "tiny_gizmos:block/base_wall" }},
+    {   "when": { "wall_light": "normal" },
+        "apply": { "model":  "tiny_gizmos:wall_rings/normal_ring" }
+    },
+    {   "when": { "wall_light": "glowing" },
+        "apply": { "model":  "tiny_gizmos:wall_rings/glowing_ring" }
+    },
+    {   "when": { "wall_light": "shaded" , "wall_color": "white"},
+        "apply": { "model":  "tiny_gizmos:wall_rings/white_ring" }
+    },
+    {   "when": { "wall_light": "shaded" , "wall_color": "orange"},
+        "apply": { "model":  "tiny_gizmos:wall_rings/orange_ring" }
+    },
+    {   "when": { "wall_light": "shaded" , "wall_color": "magenta"},
+        "apply": { "model":  "tiny_gizmos:wall_rings/magenta_ring" }
+    },
+    {   "when": { "wall_light": "shaded" , "wall_color": "light_blue"},
+        "apply": { "model":  "tiny_gizmos:wall_rings/light_blue_ring" }
+    },
+    {   "when": { "wall_light": "shaded" , "wall_color": "yellow"},
+        "apply": { "model":  "tiny_gizmos:wall_rings/yellow_ring" }
+    },
+    {   "when": { "wall_light": "shaded" , "wall_color": "lime"},
+        "apply": { "model":  "tiny_gizmos:wall_rings/lime_ring" }
+    },
+    {   "when": { "wall_light": "shaded" , "wall_color": "pink"},
+        "apply": { "model":  "tiny_gizmos:wall_rings/pink_ring" }
+    },
+    {   "when": { "wall_light": "shaded" , "wall_color": "gray"},
+        "apply": { "model":  "tiny_gizmos:wall_rings/gray_ring" }
+    },
+    {   "when": { "wall_light": "shaded" , "wall_color": "light_gray"},
+        "apply": { "model":  "tiny_gizmos:wall_rings/light_gray_ring" }
+    },
+    {   "when": { "wall_light": "shaded" , "wall_color": "cyan"},
+        "apply": { "model":  "tiny_gizmos:wall_rings/cyan_ring" }
+    },
+    {   "when": { "wall_light": "shaded" , "wall_color": "purple"},
+        "apply": { "model":  "tiny_gizmos:wall_rings/purple_ring" }
+    },
+    {   "when": { "wall_light": "shaded" , "wall_color": "blue"},
+        "apply": { "model":  "tiny_gizmos:wall_rings/blue_ring" }
+    },
+    {   "when": { "wall_light": "shaded" , "wall_color": "brown"},
+        "apply": { "model":  "tiny_gizmos:wall_rings/brown_ring" }
+    },
+    {   "when": { "wall_light": "shaded" , "wall_color": "green"},
+        "apply": { "model":  "tiny_gizmos:wall_rings/green_ring" }
+    },
+    {   "when": { "wall_light": "shaded" , "wall_color": "red"},
+        "apply": { "model":  "tiny_gizmos:wall_rings/red_ring" }
+    },
+    {   "when": { "wall_light": "shaded" , "wall_color": "black"},
+        "apply": { "model":  "tiny_gizmos:wall_rings/black_ring" }
+    }
+  ]
 }
